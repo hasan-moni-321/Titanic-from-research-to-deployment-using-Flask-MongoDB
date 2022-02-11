@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 {
+            color: rgb(73, 226, 43);
+            text-align: center;
+        }
+        h4 {
+            color: aqua; 
+            text-align: center; 
+        } 
+        body {
+            background-color: brown; 
+        }
+    </style>
+   
+</head>
+<body>
+    <h2> Predicting of surviving in Titanic accident </h2> 
+    <h4> Please provide the necessary data for prediction </h4> 
+    <div style="text-align: center;">
+        <form action="http://localhost:5000/result" method="post"> 
+
+            <label for="pclass"> PClass </label>  
+            <br> 
+            <select name="pclass" id="pclass" required>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option> 
+                <option value="3"> 3 </option> 
+            </select>
+            <br> 
+            <br> 
+
+            <label for="sex"> Sex </label> 
+            <br>
+            <select name="sex" id="sex" required> 
+                <option value="male"> Male </option> 
+                <option value="female"> Female </option>
+            </select> 
+            <br> 
+            <br> 
+
+            <label for="age"> Age </label> 
+            <br>
+            <input type="number" id="age" name="age" required> 
+            <br> 
+            <br> 
+
+            <label for="sibsp"> SibSp </label> 
+            <br>
+            <select name="sibsp" id="sibsp" required> 
+                <option value="0"> 0 </option> 
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option> 
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+            <br> 
+            <br> 
+
+            <label for="fare"> Fare </label> 
+            <br>
+            <input type="number" id="fare" name="fare" required>
+            <br> 
+            <br> 
+
+            <label for="embarked"> Embarked </label> 
+            <br>
+            <select name="embarked" id="embarked" required>
+                <option value="s"> S </option>
+                <option value="c"> C </option>
+                <option value="q"> Q </option>
+            </select>
+            <br> 
+            <br>
+
+            <label for="parch"> Parch </label> 
+            <br>
+            <select name="parch" id="parch" required> 
+                <option value="0"> 0 </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option> 
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option> 
+                <option value="6"> 6 </option> 
+            </select>
+            <br>
+            <br> 
+
+            <label for="deck"> Deck </label> 
+            <br>
+            <select name="deck" id="deck" required> 
+                <option value="a"> A </option> 
+                <option value="b"> B </option> 
+                <option value="c"> C </option>
+                <option value="d"> D </option> 
+                <option value="e"> E </option>
+                <option value="f"> F </option> 
+                <option value="g"> G </option>
+                <option value="u"> U </option> 
+                <option value="z"> Z </option>
+            </select>
+            <br> 
+            <br> 
+
+            <label for="title"> Title </label> 
+            <br>
+            <select name="title" id="title" required> 
+                <option value="Mr"> Mr </option>
+                <option value="Miss"> Miss </option>
+                <option value="Mrs"> Mrs </option> 
+                <option value="Master"> Master </option> 
+                <option value="Rare"> Rare </option>
+            </select>
+            <br> 
+            <br> 
+
+            <input type="submit" value="submit"> 
+
+        </form>
+    </div>
+</body>
+</html>
